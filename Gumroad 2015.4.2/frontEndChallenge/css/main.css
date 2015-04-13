@@ -1,0 +1,123 @@
+/* line 1, main.scss */
+* {
+  box-sizing: content-box;
+}
+
+/* line 5, main.scss */
+a:focus {
+  outline: none;
+}
+
+/* line 9, main.scss */
+body {
+  background-color: #2e587e;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+/* line 15, main.scss */
+header {
+  background-color: #030d11;
+  background-color: #1a2c46;
+  padding: 10px 0;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 22, main.scss */
+header > * {
+  vertical-align: middle;
+  margin: 0 15px;
+}
+/* line 26, main.scss */
+header #gumroadLogo {
+  border-radius: 4px;
+  height: 30px;
+}
+/* line 30, main.scss */
+header #cLarson {
+  font-size: 24px;
+}
+
+/* line 35, main.scss */
+#mainContent {
+  width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 3px black, 0 0 6px black;
+}
+/* line 42, main.scss */
+#mainContent h1 {
+  text-align: center;
+}
+/* line 47, main.scss */
+#mainContent #gameRules ul {
+  padding-left: 15px;
+}
+/* line 50, main.scss */
+#mainContent #gameRules #startButton {
+  display: block;
+  margin: auto;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #2e587e;
+  box-shadow: 1px 2px black;
+}
+/* line 60, main.scss */
+#mainContent #gameRules #startButton:hover {
+  background-color: #203e59;
+}
+/* line 63, main.scss */
+#mainContent #gameRules #startButton.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* line 70, main.scss */
+#mainContent #gameContainer {
+  width: 1000px;
+  height: 40px;
+  margin: 30px auto;
+  background-color: #b7c6cc;
+  position: relative;
+}
+/* line 76, main.scss */
+#mainContent #gameContainer.game-over {
+  box-shadow: 0 0 4px #990000;
+}
+/* line 79, main.scss */
+#mainContent #gameContainer .letterInPlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-family: monospace;
+}
+/* line 94, main.scss */
+#mainContent #gameStats .stat-row {
+  width: 49.5%;
+  float: left;
+  font-size: 20px;
+  text-align: center;
+}
+/* line 99, main.scss */
+#mainContent #gameStats .stat-row .stat {
+  margin-left: 10px;
+  font-size: 24px;
+}
+/* line 102, main.scss */
+#mainContent #gameStats .stat-row .stat.positiveScore {
+  color: #008000;
+}
+/* line 105, main.scss */
+#mainContent #gameStats .stat-row .stat.negativeScore {
+  color: #990000;
+}

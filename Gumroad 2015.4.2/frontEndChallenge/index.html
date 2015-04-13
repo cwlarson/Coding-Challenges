@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!-- <title>Gumroad Coding Challenge</title> -->
+	<title>!</title>
+
+	<!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+<body>
+	<header>
+		<a href="https://gumroad.com/" target="_blank">
+			<img id="gumroadLogo" src="images/gumroad-logo.jpg">
+		</a>
+		<span>&amp;</span>
+		<span id="cLarson">Casey W. Larson</span>
+	</header>
+
+	<section id="mainContent">
+		<h1>Gumroad Coding Challenge</h1>
+		<div id="gameRules">
+			<p>
+				How the game works:
+				<ul>
+					<li>Letters appear in the box below at a certain interval</li>
+					<li>All existing letters will move to the right</li>
+					<li>Hit a letter on the keyboard to clear the oldest instance of that letter, and to earn yourself 1 point</li>
+					<li><i>Careful! Hitting a letter on your keyboard that isn't in the box will lose you a point!</i></li>
+					<li>If any letter makes it all the way to the right of the box, you lose!</li>
+					<li>Press the 'escape' key to quit the game</li>
+				</ul>
+			</p>
+			<button id="startButton" onclick="playGame();">Start Game</button>
+		</div>
+		<div id="gameContainer">
+		</div>
+		<div id="gameStats" class="row">
+			<div class="stat-row">
+				Time Elapsed: <span class="stat" id="timeElapsed">0:00</span>
+			</div>
+			<div class="stat-row">
+				Total Score: <span class="stat" id="totalScore">0</span>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
